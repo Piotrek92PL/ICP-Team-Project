@@ -378,10 +378,21 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    transition: background-color var(--transition-duration) var(--cubic-bezier);
   }
 
   &__icon {
     stroke: var(--black);
+    transition: stroke var(--transition-duration) var(--cubic-bezier);
+  }
+}
+
+.modal-contacts__close-button:hover,
+.modal-contacts__close-button:focus {
+  background-color: var(--cherry);
+
+  & .modal-contacts__icon {
+    stroke: var(--white);
   }
 }
 
