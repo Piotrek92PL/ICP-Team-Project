@@ -385,6 +385,15 @@
   }
 }
 
+.modal-contacts__close-button:hover,
+.modal-contacts__close-button:focus {
+  background-color: var(--cherry);
+
+  & .modal-contacts__icon {
+    stroke: var(--white);
+  }
+}
+
 .mapouter {
   position: relative;
   text-align: right;
