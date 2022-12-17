@@ -378,10 +378,12 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    transition: background-color var(--transition-duration) var(--cubic-bezier);
   }
 
   &__icon {
     stroke: var(--black);
+    transition: stroke var(--transition-duration) var(--cubic-bezier);
   }
 }
 
