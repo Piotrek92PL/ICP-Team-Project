@@ -1,6 +1,6 @@
-<section class="section section--contacts section--gradient">
+<section class="section-contacts section-contacts--gradient" id="contacts">
   <h2 class="is-invisible">Contacts</h2>
-  <div class="container container--contacts">
+  <div class="container-contacts">
     <ul class="contacts">
       <li class="contacts__item">
         <span class="contacts__category contacts__category--cafe">CAFE</span>
@@ -19,6 +19,7 @@
           <li><a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a></li>
         </ul>
       </li>
+
       <li class="contacts__item">
         <span class="contacts__category contacts__category--foodtruck">FOOD TRUCK</span>
         <div>
@@ -36,6 +37,7 @@
           <li><a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a></li>
         </ul>
       </li>
+
       <li class="contacts__item">
         <span class="contacts__category contacts__category--cafe">CAFE</span>
         <div>
@@ -56,8 +58,68 @@
     </ul>
 
     <ul class="map-btns map-btns--margin">
-      <li><button type="button" class="map-btns__btn map-btns__btn--red">Our Locations</button></li>
-      <li><button type="button" class="map-btns__btn map-btns__btn--white">Franchise</button></li>
+      <li>
+        <button type="button" class="map-btns__btn map-btns__btn--red" data-modal-open-l>
+          Our Locations<svg class="map-btns__icon map-btns__icon--white">
+            <use href="./images/symbol-defs-contacts.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
+
+      <li>
+        <button type="button" class="map-btns__btn map-btns__btn--white" data-modal-open-f>
+          Franchise<svg class="map-btns__icon map-btns__icon--red">
+            <use href="./images/symbol-defs-contacts.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </li>
     </ul>
+
+    <div class="backdrop-contacts is-hidden" data-modal-l>
+      <div class="modal-contacts modal-contacts--position">
+        <button class="modal-contacts__close-button" data-modal-close-l>
+          <svg height="10" width="10" class="modal-contacts__icon">
+            <use href="./images/symbol-defs-contacts.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mapouter">
+          <div class="mapouter__gmap_canvas">
+            <iframe
+              class="mapouter__gmap_iframe"
+              width="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=280&amp;height=280&amp;hl=en&amp;q=Chicago&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop-contacts is-hidden" data-modal-f>
+      <div class="modal-contacts modal-contacts--position">
+        <button class="modal-contacts__close-button" data-modal-close-f>
+          <svg height="10" width="10" class="modal-contacts__icon">
+            <use href="./images/symbol-defs-contacts.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mapouter">
+          <div class="mapouter__gmap_canvas">
+            <iframe
+              class="mapouter__gmap_iframe"
+              width="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=280&amp;height=280&amp;hl=en&amp;q=New York&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
