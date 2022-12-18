@@ -476,6 +476,225 @@ img {
   background-color: var(--dawn-pink);
 }
 
+.products__wrapper {
+  max-width: 100%;
+  padding: 121px 20px 98px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .products__wrapper {
+    padding: 122px 34px 112px 34px;
+  }
+}
+.products__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 130px;
+}
+@media screen and (min-width: 768px) {
+  .products__heading {
+    margin-bottom: 150px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__heading {
+    margin-bottom: 237px;
+  }
+}
+.products__heading-label {
+  font-size: 18px;
+  line-height: 1.17;
+  color: rgb(255, 165, 186);
+  margin: 0 0 15px 0;
+}
+@media screen and (min-width: 768px) {
+  .products__heading-label {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__heading-label {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.products__heading-title {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: rgb(212, 20, 67);
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .products__heading-title {
+    font-size: 40px;
+    line-height: 1.46;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__heading-title {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+.products__grid {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .products__grid {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__grid {
+    gap: 29px;
+  }
+}
+.products__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  border-radius: 24px;
+  padding-bottom: 41px;
+}
+.products__card::before {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  content: "";
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 224px;
+}
+.products__card--icecream::before {
+  background-image: url(../images/icecream-mobile-x1.png);
+}
+.products__card--icecoffee::before {
+  background-image: url(../images/icecoffee-mobile-x1.png);
+}
+.products__card--milkshakes::before {
+  background-image: url(../images/milkshakes-mobile-x1.png);
+}
+@media screen and (min-width: 768px) {
+  .products__card {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__card {
+    width: 220px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__card {
+    width: 329px;
+  }
+}
+.products__card--icecream {
+  background-color: rgb(255, 184, 202);
+}
+.products__card--icecoffee {
+  background-color: rgb(240, 209, 165);
+}
+.products__card--milkshakes {
+  background-color: rgb(194, 226, 151);
+}
+.products__name {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 66px;
+}
+.products__name::after {
+  display: block;
+  margin: 0;
+  content: "";
+  width: 26px;
+  height: 6px;
+  background-image: url(../images/whitedots-x1.png);
+}
+@media screen and (min-width: 1280px) {
+  .products__name {
+    font-size: 30px;
+  }
+}
+.products__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  line-height: 1.52;
+  padding-left: 41px;
+  padding-right: 39px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .products__copy {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__copy {
+    padding: 0px 11px 0 11px;
+    line-height: 1.76;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__copy {
+    padding: 0px 44px 0 44px;
+    line-height: 1.76;
+    height: 106px;
+    font-size: 16px;
+  }
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  background-image: url("../images/arrow-x1.png");
+  cursor: pointer;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    margin-block: 40px;
+  }
+}
+
 .container2 {
   margin-left: auto;
   margin-right: auto;
@@ -520,7 +739,7 @@ img {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .gallery img {
     max-width: 1280px;
   }
