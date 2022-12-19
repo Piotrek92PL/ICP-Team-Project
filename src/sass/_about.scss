@@ -3,6 +3,7 @@
   max-width: var(--mobile-width);
   padding-top: 125px;
   padding-bottom: 39px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -106,6 +107,15 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (min-width: 1280px) {
+  .about__content {
+    background-image: url(/./images/milkdrop-desktop-x2.png);
+  }
+}
+
 .about__container {
   padding-inline: 20px;
   padding-bottom: 46px;
@@ -195,6 +205,12 @@
   padding-bottom: 27px;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__paragraph {
+    background-image: url(/./images/milkdrop-mobile-x2.png);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about__paragraph {
     background: none;
@@ -227,7 +243,7 @@
   background: var(--white);
   border: 0;
   border-radius: 22px;
-  padding-inline: 37px;
+  padding-inline: 35px;
   padding-block: 15px;
   cursor: pointer;
   &:hover {
@@ -241,4 +257,8 @@
     line-height: 1.31;
     padding-block: 14px;
   }
+}
+
+.about__button-icon {
+  margin-left: 13.62px;
 }

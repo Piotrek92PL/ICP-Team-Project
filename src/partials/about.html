@@ -11,10 +11,13 @@
         class="about__image"
         srcset="
           ././images/milkandcow-mobile-x1.png  280w,
+          ././images/milkandcow-mobile-x2.png  280w,
           ././images/milkandcow-tablet-x1.png  340w,
-          ././images/milkandcow-desktop-x1.png 516w
+          ././images/milkandcow-tablet-x2.png  340w,
+          ././images/milkandcow-desktop-x1.png 516w,
+          ././images/milkandcow-desktop-x2.png 516w
         "
-        sizes="(min-width: 320px) 280px, (min-width: 772px) 340px, (min-width: 1280px) 516px, 100vw"
+        sizes="(min-width: 320px) 280px, (min-width: 772px) 340px, (min-width: 1280px) 516px"
       />
     </div>
     <div class="about__box">
@@ -27,7 +30,12 @@
         in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
         maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
       </p>
-      <button type="button" class="about__button">Read more</button>
+      <button type="button" class="about__button">
+        Read more
+        <svg class="about__button-icon" width="9" height="16">
+          <use href="/./images/vector-sprite1.svg#icon-vector1"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
