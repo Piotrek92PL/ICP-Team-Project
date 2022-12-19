@@ -14,7 +14,7 @@
         padding-top: 152px;
         width: calc((100% - 180px) / 3);
         &:not(:last-child) {
-          margin-right: 60px;
+          
         }
       }
     
@@ -22,20 +22,24 @@
         padding-top: 129px;
         width: calc((100% - 90px) / 3);
         &:not(:last-child) {
-          margin-right: 30px;
+          
         }
       }
     
     &__list {
       display: flex;
       list-style: none;
-    
+      @media screen and (min-width: 1280px) {
+        gap:30px;
+        flex-wrap: wrap;
+      }
       @media screen and (min-width: 0px) {
         flex-wrap: wrap;
       }
     
       @media screen and (min-width: 768px) and (max-width: 1279px) {
         justify-content: center;
+        gap:60px;
       }
     }
   
@@ -190,12 +194,12 @@
     }
     
       @media screen and (min-width: 768px) and (max-width: 1279px) {
-        padding: 0 36px;
-        width: 730px;
+        padding: 0 10px;
+        width: 772px;
       }
     
       @media screen and (min-width: 1280px) {
-          padding: 0 15px;
+         
         width: 1080px;
       }
     }
