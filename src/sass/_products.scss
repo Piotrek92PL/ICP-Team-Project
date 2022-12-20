@@ -1,6 +1,6 @@
 .products {
     &__wrapper {
-        max-width: 100%;
+        width: 100%;
         padding: 121px 20px 98px 20px;
         display: flex;
         flex-direction: column;
@@ -17,8 +17,6 @@
         justify-content: center;
         justify-items: center;
         font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 130px;
@@ -32,19 +30,17 @@
         }
 
         &-label {
-            font-size: 18px;
             line-height: 1.17;
-            color: rgb(255, 165, 186);
-            margin: 0 0 15px 0;
+            color: var(--flamingo-pink);
+            margin-bottom: 15px;
 
-            @media screen and (min-width: 768px) {
-                font-size: 26px;
-                line-height: 1.15;
+            @media screen and (min-width: 320px) {
+                font-size: calc(1.125rem + ((1vw - 3.2px) * 1.25));
+                min-height: 0vw;
             }
 
             @media screen and (min-width: 1280px) {
                 font-size: 30px;
-                line-height: 1.13;
             }
         }
 
@@ -52,28 +48,24 @@
             font-size: 34px;
             line-height: 1.15;
             letter-spacing: 0.04em;
-            color: rgb(212, 20, 67);
-            margin: 0 auto;
+            color: var(--cherry);
 
-            @media screen and (min-width: 768px) {
-                font-size: 40px;
-                line-height: 1.46;
+            @media screen and (min-width: 320px) {
+                font-size: calc(2.125rem + ((1vw - 3.2px) * 2.5));
+                min-height: 0vw;
             }
 
             @media screen and (min-width: 1280px) {
                 font-size: 58px;
-                line-height: 1.14;
             }
         }
     }
 
     &__grid {
         list-style: none;
-        padding: 0;
         display: flex;
         flex-direction: column;
         gap: 130px;
-        margin: 0 auto;
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
@@ -86,87 +78,193 @@
     }
 
     &__card {
-        width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        flex-direction: column;
-        color: rgb(255, 255, 255);
+        max-width: 330px;
+        position: relative;
+        color: var(--white);
         border-radius: 24px;
+        padding-top: 161px;
         padding-bottom: 41px;
+        padding-inline: 14%;
+
+        &--icecream {
+            background-color: var(--cherry-blossom);
+        }
+
+        &--icecoffee {
+            background-color: var(--deep-peach);
+        }
+
+        &--milkshakes {
+            background-color: var(--sprout);
+        }
+
+        @media screen and (min-width:768px) {
+            padding-top: 152px;
+            padding-inline: 5%;
+        }
+
+        @media screen and (min-width:1280px) {
+            padding-bottom: 50px;
+            padding-top: 163px;
+            padding-inline: 13.5%;
+        }
 
         &::before {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+            display: block;
+            position: absolute;
+            top: -23%;
             content: "";
             width: 100%;
+            min-height: 252px;
             background-size: contain;
             background-repeat: no-repeat;
-            // max-width: 249px;
-            min-height: 224px;
-            // transform: translateY(-45%) translatex(-45%);
-            // margin-bottom: 22px;
+            background-position: center;
+
+            @media screen and (min-width:768px) {
+                min-height: 226px;
+                top: -21%;
+            }
+
+            @media screen and (min-width:1280px) {
+                min-height: 335px;
+                top: -209px;
+            }
         }
 
         &--icecream::before {
             background-image: url(../images/icecream-mobile-x1.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/icecream-mobile-x2.png);
+            }
+
+            @media screen and (min-width:768px) {
+                background-image: url(../images/icecream-tablet-x1.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/icecream-tablet-x2.png);
+                }
+            }
+
+            @media screen and (min-width:1280px) {
+                background-image: url(../images/icecream-desktop-x1.png);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/icecream-desktop-x2.png);
+                }
+            }
         }
 
         &--icecoffee::before {
             background-image: url(../images/icecoffee-mobile-x1.png);
+
+            @media screen and (min-width:768px) {
+                background-image: url(../images/icecoffee-tablet-x1.png);
+            }
+
+            @media screen and (min-width:1280px) {
+                background-image: url(../images/icecoffee-desktop-x1.png);
+            }
         }
 
         &--milkshakes::before {
             background-image: url(../images/milkshakes-mobile-x1.png);
+
+            @media screen and (min-width:768px) {
+                background-image: url(../images/milkshakes-tablet-x1.png);
+            }
+
+            @media screen and (min-width:1280px) {
+                background-image: url(../images/milkshakes-desktop-x1.png);
+            }
         }
 
-        @media screen and (min-width:768px) {
-            max-width: 100%
+        &-overlay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            border-radius: 24px;
+            transform: translate(0, 0);
+            transition-duration: var(--transition-duration);
+            transition-timing-function: var(--cubic-bezier);
+            
+            &--icecream {
+                background: var(--cherry-blossom);
+            }
+
+            &--icecoffee {
+                background-color: var(--deep-peach);
+            }
+
+            &--milkshakes {
+                background-color: var(--sprout);
+            }
         }
 
-        @media screen and (min-width: 768px) {
-            width: 220px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            width: 329px;
-        }
-
-        &--icecream {
-            background-color: rgb(255, 184, 202);
-        }
-
-        &--icecoffee {
-            background-color: rgb(240, 209, 165);
-        }
-
-        &--milkshakes {
-            background-color: rgb(194, 226, 151);
-        }
+        .is-hidden {
+            transform: translate(0, -100px);
+            transition-duration: var(--transition-duration);
+            transition-timing-function: var(--cubic-bezier);
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+            pointer-events: none;
+         }
     }
 
     &__name {
+        display: block;
+        flex-direction: column;
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
         line-height: 1.14;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 66px;
 
         &::after {
             display: block;
-            margin: 0;
+            margin-inline: auto;
+            margin-block: 30px;
+            background-image: url(../images/whitedots-x1.png);
             content: "";
             width: 26px;
             height: 6px;
-            background-image: url(../images/whitedots-x1.png);
-            // transform: translateY(565%) translateX(430%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media screen and (min-width:1280px) {
+                margin-block: 32px;
+            }
         }
 
-        @media screen and (min-width:1280px) {
+        @media screen and (min-width: 320px) {
+            font-size: calc(1.25rem + ((1vw - 3.2px) * 1.0417));
+            min-height: 0vw;
+        }
+
+        @media screen and (min-width: 1280px) {
             font-size: 30px;
         }
     }
@@ -178,36 +276,29 @@
         justify-content: flex-start;
         text-align: center;
         line-height: 1.52;
-        padding-left: 41px;
-        padding-right: 39px;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
         letter-spacing: 0.04em;
         margin-bottom: 30px;
         overflow: hidden;
-
-        @media screen and (min-width: 480px) {
-            margin-bottom: 25px;
-            font-size: 16px;
-        }
+        height: 124px;
 
         @media screen and (min-width: 768px) {
-            padding: 0px 11px 0 11px;
             line-height: 1.76;
-            // height: 124px;
+            margin-bottom: 40px;
         }
 
         @media screen and (min-width: 1280px) {
-            padding: 0px 44px 0 44px;
-            line-height: 1.76;
             height: 106px;
             font-size: 16px;
+            margin-bottom: 62px;
         }
     }
 }
 
 .btn {
+    display: block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -216,13 +307,24 @@
     background-image: url("../images/arrow-x1.png");
     cursor: pointer;
     padding: 0;
+    margin-inline: auto;
+    transform: rotate(0deg) scale(1);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--cubic-bezier);
 
-    @media screen and (min-width: 768px) {
-        margin-block: 40px;
+    &:hover,
+    &:focus {
+        transform: rotate(360deg) scale(1.5);
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--cubic-bezier);
     }
+}
 
-    // @media screen and (min-width: 1280px) {
-    //     margin-top: 62px;
-    //     margin-bottom: 50px;
-    // }
+.btn__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 24px;
+    top: 24px;
 }
