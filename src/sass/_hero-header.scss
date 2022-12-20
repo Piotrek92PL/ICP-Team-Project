@@ -20,11 +20,10 @@
   padding-top: 60px;
 }
 .close-btn {
-    position: relative;
-    top: 23px;
-    right: 28px;
-    fill: #ffffff;
-
+  position: relative;
+  top: 23px;
+  right: 28px;
+  fill: #ffffff;
 }
 .sidebar__menu-button {
   margin: auto;
@@ -141,7 +140,10 @@
   margin-left: 20px;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 8px; 
+  & a {
+    text-decoration: none;
+  }
 }
 .header__button {
   border-radius: 20px;
@@ -295,7 +297,7 @@
     width: 16px;
     height: 16px;
     content: '';
-    background-image: url(/src/images/sprite.svg#ellipse);
+    background-image: url(./images/sprite.svg#ellipse);
     background-size: contain;
     display: inline-block;
     position: relative;
