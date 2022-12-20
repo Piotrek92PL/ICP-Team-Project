@@ -1,0 +1,137 @@
+<header>
+  <div class="header">
+    <div class="header__menu">
+      <a class="logo" href="#"><img src="/src/images/logo-desktop-x2.png" width="199px" /></a>
+      <nav class="header__navbar">
+        <a
+          href="#"
+          class="header__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="header__nabar--links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">How it's made?</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button type="button" class="header__menu-button">Buy now</button>
+    </div>
+    <div class="header__headline">
+      <h1 class="header__headline--general">
+        <span class="header__headline--first">ICE CREAM MADE WITH</span
+        ><span class="header__headline--second"> PASSION </span>
+      </h1>
+    </div>
+    <div class="header__button-container">
+      <button type="button" class="header__button">Products</button>
+      <button type="button" class="header__button">How it's made?</button>
+    </div>
+    <div class="header__eco-container">
+      <img
+        src="/src/images/milk-tablet-x1.png"
+        alt="dzbanek"
+        srcset="
+          /src/images/milk-tablet-x1.png  124w,
+          /src/images/milk-tablet-x2.png  248w,
+          /src/images/milk-desktop-x1.png 188w,
+          /src/images/milk-desktop-x2.png 376w
+        "
+        sizes="(min-width: 1280px) 188px, (min-width: 768px) 124px"
+      />
+      <p class="header__eco-container--description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et <br />
+        <a href="#"><img src="/src/images/arrow-x1.png" width="18" height="18" alt="strzalka" /></a>
+      </p>
+    </div>
+    <div class="header__numbers__container">
+      <ul class="header__numbers--style">
+        <li class="header__numbers--number">
+          16
+          <ul>
+            <li><span class="header__numbers--description">cafes</span></li>
+          </ul>
+        </li>
+        <li class="header__numbers--number">
+          23
+          <ul>
+            <li><span class="header__numbers--description">food trucks</span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <img
+    class="header__background--component-mobile"
+    src="/src/images/rozek284.png"
+    alt="Rozek"
+    srcset="/src/images/rozek284.png 284w, /src/images/rozek284@x2.png 568w"
+    sizes="(min-width: 320px) 284px"
+  />
+  <img
+    class="header__background--component"
+    src="/src/images/rozek324.png"
+    alt="Rozek"
+    srcset="
+      /src/images/rozek324.png     324w,
+      /src/images/rozek324@x2.png  648w,
+      /src/images/rozek538.png     538w,
+      /src/images/rozek538@x2.png 1076w
+    "
+    sizes="(min-width: 1280px) 538px, (min-width: 768px) 324px"
+  />
+  <img
+    class="header__background--lady"
+    src="/src/images/soootasty-tablet-x1.png"
+    alt="Pani z lodem"
+    srcset="
+      /src/images/soootasty-tablet-x1.png  168w,
+      /src/images/soootasty-tablet-x2.png  336w,
+      /src/images/soootasty-desktop-x1.png 293w,
+      /src/images/soootasty-desktop-x2.png 586w
+    "
+    sizes="(min-width: 1280px) 293px, (min-width: 768px) 168px"
+  />
+</header>
+
+<div class="mobile-menu js-menu-container" id="mobile-menu">
+  <button type="button" class="mobile-menu__close-button js-close-menu">
+    <svg height="14px" width="14px">
+      <use href="./images/symbol-defs-contacts.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <button type="button" class="mobile-menu__modal-button">
+    Buy now
+    <svg class="mobile-menu__icon">
+      <use href="./images/symbol-defs-contacts.svg#icon-arrow-right"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu__navigation">
+    <li class="mobile-menu__navigation-item">
+      <a href="#header" class="mobile-menu__navigation-link">Home</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#about" class="mobile-menu__navigation-link">About us</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#advantages" class="mobile-menu__navigation-link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#products" class="mobile-menu__navigation-link">Our products</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#contacts" class="mobile-menu__navigation-link">Contact</a>
+    </li>
+  </ul>
+</div>
