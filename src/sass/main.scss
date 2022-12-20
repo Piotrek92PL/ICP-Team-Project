@@ -4,10 +4,11 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import '.hero-header';
 @import './variables';
 @import './normalize';
 @import './example';
 @import './customer-reviews';
 @import './contacts';
 @import './products';
-@import './advantages'
+@import './advantages';
