@@ -3,7 +3,12 @@
     <div class="header__menu">
       <a class="logo" href="#"><img src=".`/images/logo-desktop-x2.png" width="199px" /></a>
       <nav class="header__navbar">
-        <a href="#" class="header__toggle">
+        <a
+          href="#"
+          class="header__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -97,18 +102,35 @@
     sizes="(min-width: 1280px) 293px, (min-width: 768px) 168px"
   />
 </header>
-<div class="header__sidebar">
-  <span>
-    <svg class="close-btn" width="14" height="14">
-      <use href="./images/sprite.svg#icon-close"></use>
+<div class="mobile-menu js-menu-container" id="mobile-menu">
+  <button type="button" class="mobile-menu__close-button js-close-menu">
+    <svg height="14px" width="14px">
+      <use href="./images/symbol-defs-contacts.svg#icon-close"></use>
     </svg>
-  </span>
-  <button type="button" class="sidebar__menu-button">Buy now</button>
-  <ul class="sidebar__menu-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">How it's made?</a></li>
-    <li><a href="#">Our Products</a></li>
-    <li><a href="#">Contact</a></li>
+  </button>
+
+  <button type="button" class="mobile-menu__modal-button">
+    Buy now
+    <svg class="mobile-menu__icon">
+      <use href="./images/symbol-defs-contacts.svg#icon-arrow-right"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu__navigation">
+    <li class="mobile-menu__navigation-item">
+      <a href="#header" class="mobile-menu__navigation-link">Home</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#about" class="mobile-menu__navigation-link">About us</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#advantages" class="mobile-menu__navigation-link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#products" class="mobile-menu__navigation-link">Our products</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="#contacts" class="mobile-menu__navigation-link">Contact</a>
+    </li>
   </ul>
 </div>
