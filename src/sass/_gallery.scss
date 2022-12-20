@@ -1,16 +1,21 @@
 .container2 {
   margin-left: auto;
   margin-right: auto;
-  /*  width: 100%; */
+  padding-top: 97px;
+  padding-bottom: 80px;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    padding-top: 140px;
+    padding-bottom: 121px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    padding-top: 139px;
+    padding-bottom: 123px;
   }
 }
 
@@ -20,7 +25,14 @@
 }
 
 .gallery-gradient {
-  background-image: linear-gradient(to bottom, #fff5f6 39.77%, #ffffff 39.77%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #fff5f6 48.49%, #ffffff 48.49%);
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #fff5f6 46.85%, #ffffff 46.85%);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to bottom, #fff5f6 44.79%, #ffffff 44.79%);
+  }
 }
 
 .gallery img {
