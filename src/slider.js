@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  $('slider').slick({
+  $('.slider').slick({
     dots: true,
+    arrows: false,
+    dotsClass: 'customer-reviews__icon-list',
   });
 });
