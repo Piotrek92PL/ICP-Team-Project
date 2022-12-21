@@ -5,7 +5,6 @@
   padding-right: 40px;
   // display: flex;
   // flex-direction: column;
-
   // align-items: center;
   &__img {
     margin: 0 auto;
@@ -45,9 +44,10 @@
       background-repeat: no-repeat;
       top: -15px;
       z-index: -1;
-      left: -3px;
+      left: -13px;
       width: 54px;
       height: 40px;
+      position: absolute;
     }
   }
   &__dots {
@@ -58,7 +58,8 @@
     font-size: 14px;
     margin-bottom: 30px;
     text-align: center;
-    &::after {
+    position: relative;
+    &::before {
       content: '';
       background-size: contain;
       background-image: url(/images/dots-x2.png);
@@ -67,10 +68,11 @@
       background-repeat: no-repeat;
       width: 28px;
       height: 4px;
-      top: 261px;
-      left: 150px;
+      left: 47%;
+      top: -20px;
     }
   }
+
   &__icon-list {
     display: flex;
     justify-content: center;
@@ -121,6 +123,7 @@
     fill: var(--light-grey);
   }
 }
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .customer-reviews__text::before {
     background-image: url(../images/quote-mobile-x2.png);
@@ -139,9 +142,6 @@
       // height: 164px;
       // max-width: 926px;
       margin-bottom: 42px;
-      &::after {
-        // left: 353px;
-      }
     }
 
     &__text {
@@ -154,23 +154,23 @@
     &__customer {
       font-size: 16px;
       margin-bottom: 35px;
+      &::before {
+        left: 48%;
+      }
     }
   }
 }
+
 @media screen and (min-width: 1280px) {
   .customer-reviews {
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 176px;
     padding-right: 176px;
-
     &__block {
       margin-top: 15px;
       // width: 962px;
       // height: 138px;
-      &::after {
-        // left: 444px;
-      }
     }
     &__text {
       font-size: 16px;
@@ -180,6 +180,10 @@
     }
     &__customer {
       font-size: 20px;
+      &::before {
+        left: 49%;
+        top: -20px;
+      }
     }
   }
 }
