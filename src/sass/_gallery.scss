@@ -5,7 +5,7 @@
   padding-bottom: 80px;
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    max-width: 100%;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -27,6 +27,9 @@
 .gallery-gradient {
   background-image: linear-gradient(to bottom, #fff5f6 48.49%, #ffffff 48.49%);
 
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to bottom, #fff5f6 47.51%, #ffffff 47.51%);
+  }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to bottom, #fff5f6 46.85%, #ffffff 46.85%);
   }
@@ -37,7 +40,7 @@
 
 .gallery img {
   display: block;
-  max-width: 100%;
+  max-width: 480px;
 
   @media screen and (min-width: 480px), (max-width: 767px) {
     max-width: 480px;
