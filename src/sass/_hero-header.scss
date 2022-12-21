@@ -17,6 +17,7 @@ h1 {
     margin-right: 110px;
   }
 }
+
 .header__toggle {
   z-index: 5;
   position: absolute;
@@ -87,6 +88,7 @@ h1 {
   gap: 8px; 
   & a {
     text-decoration: none;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -96,7 +98,6 @@ h1 {
       color: #ffffff;
     }
   }
-  
 }
 .header__button {
   border-radius: 20px;
@@ -250,7 +251,6 @@ h1 {
     width: 16px;
     height: 16px;
     content: '';
-   /* background-image: url(./images/sprite.svg#ellipse); */
     background-size: contain;
     background-color: #ffffff;
     border-radius: 50%;
