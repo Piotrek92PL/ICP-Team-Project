@@ -23,7 +23,10 @@
           </ul>
         </div>
       </nav>
-      <button type="button" class="header__menu-button">Buy now</button>
+      <button type="button" class="header__menu-button">Buy now
+        <svg class="mobile-menu__icon">
+      <use href="./images/symbol-defs-contacts.svg#icon-arrow-right"></use>
+    </svg></button>
     </div>
     <div class="header__headline">
       <h1 class="header__headline--general">
@@ -50,12 +53,7 @@
       <p class="header__eco-container--description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et <br />
-        <a href="#"><img src="./images/arrow-x1.png" width="18" height="18" alt="strzalka" 
-          srcset="
-          ./images/arrow-x1.png 18w,
-          ./images/arrow-x2.png 36w
-          "
-          sizes="(min-width: 1280px) 18px, (min-width: 768px) 36px"
+        <a href="#"><img src="./images/arrow-x1.png" alt="strzalka" class="arrow"
           /></a>
 
       </p>
@@ -85,16 +83,8 @@
     sizes="(min-width: 320px) 171px"
 
   />
-  <!-- <img
-    src="./images/ellipse-mobile-x1.png"
-    alt="Elipsa"
-    srcset="
-      ./images/ellipse-mobile-x1.png 284w
-      ./images/ellipse-tablet-x1.png  324w,    
-      ./images/ellipse-desktop-x1.png 538w,
-    "
-    sizes="(min-width: 1280px) 538px, (min-width: 768px) 324px, (min-width: 320px) 284px"
-  /> -->
+  <img class="ellipse-mobile" src="./images/ellipse-mobile-x1.png" />
+  <img class="ellipse-desktop" src="./images/ellipse-desktop-x1.png" />
   <img
     class="header__background--component"
     src="./images/bigicecream-tablet-x1.png"
