@@ -100,6 +100,7 @@ right: 0px;
   gap: 8px; 
   & a {
     text-decoration: none;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -109,7 +110,6 @@ right: 0px;
       color: #ffffff;
     }
   }
-  
 }
 .header__button {
   border-radius: 20px;
@@ -273,7 +273,6 @@ right: 0px;
     width: 16px;
     height: 16px;
     content: '';
-   /* background-image: url(./images/sprite.svg#ellipse); */
     background-size: contain;
     background-color: #ffffff;
     border-radius: 50%;
