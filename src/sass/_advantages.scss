@@ -1,206 +1,200 @@
 .is-invisible {
-    display: none;
-  }
+  display: none;
+}
+
   
-    
-    .advantage {
-      position: relative;
-    
-      @media screen and (min-width: 0px) and (max-width: 767px) {
-        padding-top: 105px;
-      }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        padding-top: 152px;
-        width: calc((100% - 180px) / 3);
-        &:not(:last-child) {
-          
-        }
-      }
-    
-      @media screen and (min-width: 1280px) {
-        padding-top: 129px;
-        width: calc((100% - 90px) / 3);
-        &:not(:last-child) {
-          
-        }
-      }
-    
-    &__list {
-      display: flex;
-      list-style: none;
-      @media screen and (min-width: 1280px) {
-        gap:30px;
-        flex-wrap: wrap;
-      }
-      @media screen and (min-width: 0px) {
-        flex-wrap: wrap;
-      }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        justify-content: center;
-        gap:60px;
-      }
+  .advantage {
+    position: relative;
+  
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      padding-top: 105px;
     }
   
-    &:nth-child(1)::before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-image: url(../images/icon3-x1.png);
-      background-repeat: no-repeat;
-      background-size: 33px 50px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      padding-top: 152px;
+      width: calc((100% - 180px) / 3);
     
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/icon3-x2.png);
-      }
-    
-      @media screen and (min-width: 0px) and (max-width: 767px) {
-        top: 39px;
-      }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        top: 66px;
-      }
-    
-      @media screen and (min-width: 1280px) {
-        top: 39px;
-      }
     }
   
-    &:nth-child(2)::before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-image: url(../images/icon2-x1.png);
-      background-repeat: no-repeat;
-      background-size: 50px 50px;
-    
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/icon2-x2.png);
-      }
-    
-      @media screen and (min-width: 0px) and (max-width: 767px) {
-        top: 39px;
-      }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        top: 66px;
-      }
-    
-      @media screen and (min-width: 1280px) {
-        top: 39px;
-      }
+    @media screen and (min-width: 1280px) {
+      padding-top: 129px;
+      width: calc((100% - 120px) / 3);
+     
     }
   
-    &:nth-child(3)::before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-image: url(../images/icon1-x1.png);
-      background-repeat: no-repeat;
-      background-size: 44px 50px;
-    
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/icon1-x2.png);
-      }
-    
-      @media screen and (min-width: 0px) and (max-width: 767px) {
-        top: 39px;
-      }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        top: 66px;
-      }
-    
-      @media screen and (min-width: 1280px) {
-        top: 39px;
-      }
+  &__list {
+    display: flex;
+    list-style: none;
+    @media screen and (min-width: 1280px) {
+      gap:60px;
+      flex-wrap: wrap;
     }
-   
-    &__title {
-      font-family: 'Titan One';
-      font-style: normal;
-      font-weight: normal;
-      color: var(--cherry);
-    
-      margin-bottom: 15px;
-    
-      @media screen and (min-width: 0px) and (max-width: 767px) {
-        font-size: 36px;
-        line-height: 41px;
-      }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        font-size: 48px;
-        line-height: 55px;
-      }
-    
-      @media screen and (min-width: 1280px) {
-        font-size: 58px;
-        line-height: 66px;
-      }
+    @media screen and (min-width: 0px) {
+      flex-wrap: wrap;
     }
   
-    &__description {
-      font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: bold;
-      letter-spacing: 0.02em;
-      color: var(--black);
-    
-      @media screen and (min-width: 0px) and (max-width: 767px) {
-        font-size: 12px;
-        line-height: 1.66;
-        width: 230px;
-      }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        font-size: 14px;
-        line-height: 1.71;
-        width: 100%;
-      }
-    
-      @media screen and (min-width: 1280px) {
-        font-size: 16px;
-        line-height: 1.75;
-      }
-    }
-  
-  &__section--background {
-      background-color: var(--rose-white);
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      justify-content: center;
+      gap:60px;
     }
   }
-    .container--advantages {
-      margin: 0 auto;
-      padding: 0 20px;
-      max-width: 100%;
+
+  &:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icon3-x1.png);
+    background-repeat: no-repeat;
+    background-size: 33px 50px;
   
-      @media screen and (min-width: 480px)
-     {
-      width: 300px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/icon3-x2.png);
     }
-    
-      @media screen and (min-width: 768px) and (max-width: 1279px) {
-        padding: 0 10px;
-        width: 772px;
-      }
-    
-      @media screen and (min-width: 1280px) {
-         
-        width: 1080px;
-      }
+  
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      top: 39px;
     }
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      top: 66px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      top: 39px;
+    }
+  }
+
+  &:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icon2-x1.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+  
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/icon2-x2.png);
+    }
+  
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      top: 39px;
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      top: 66px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      top: 39px;
+    }
+  }
+
+  &:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icon1-x1.png);
+    background-repeat: no-repeat;
+    background-size: 44px 50px;
+  
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/icon1-x2.png);
+    }
+  
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      top: 39px;
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      top: 66px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      top: 39px;
+    }
+  }
+ 
+  &__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: normal;
+    color: var(--cherry);
+  
+    margin-bottom: 15px;
+  
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      font-size: 36px;
+      line-height: 41px;
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 48px;
+      line-height: 55px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 66px;
+    }
+  }
+
+  &__description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: var(--black);
+  
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.66;
+      width: 230px;
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 14px;
+      line-height: 1.71;
+      width: 100%;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+
+&__section--background {
+    background-color: var(--rose-white);
+  }
+}
+  .container--advantages {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 100%;
+    width: 320px;
+  
+  
+  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      padding: 0 36px;
+      width: 750px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+         width: 1240px;
+         padding: 0 115px;
+    }
+  }
    
