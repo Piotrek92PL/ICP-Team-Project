@@ -137,6 +137,9 @@ h1 {
   background-color: #d41443;
   color: #ffffff;
 }
+.header__button:hover a,.header__button:focus a {
+  color: #ffffff;
+}
 /* RES 768px */
 .header__menu-button {
   visibility: hidden;
