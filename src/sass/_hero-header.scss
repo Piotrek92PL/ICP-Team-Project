@@ -17,6 +17,18 @@ h1 {
     margin-right: 110px;
   }
 }
+.ellipse-mobile {
+width: 284px;
+position: absolute;
+top: 83px;
+right: 0px;
+}
+.arrow {
+  width: 18px;
+}
+.ellipse-desktop {
+  display: none;
+}
 .header__toggle {
   z-index: 5;
   position: absolute;
@@ -47,7 +59,8 @@ h1 {
 .header__background--component-mobile {
   position: absolute;
   right: 0px;
-  top: 83px;
+  top: 92px;
+  z-index: 2;
   
   }
 .header__headline {
@@ -194,6 +207,16 @@ h1 {
   .header__background--component-mobile {
     visibility: hidden;
   }
+  .ellipse-mobile {
+    display: none;
+  }
+  .ellipse-desktop {
+    display: inline;
+    position: absolute;
+    top: 31px;
+    right: 137px;
+    width: 324px;
+  }
   .header__background--component {
     visibility: visible;
     width: 143px; 
@@ -297,22 +320,40 @@ h1 {
     line-height: 44px;
     font-size: 38px;
   }
+  .arrow {
+  width: 36px;
+}
   .header__headline--second {
     font-size: 58px;
     line-height: 90.5%;
+  }
+  .ellipse-desktop {
+    width: 538px;
+    top: 52px;
+    right: 267px;
   }
   .header__menu {
     margin-top: 31px;
     margin-left: 46px;
   }
+  .header__button {
+    height: 40px;
+    padding: 15px 24px;
+    font-size: 14px;
+  }
   .header__button-container {
+    max-width: 260px;
     margin-top: 19px;
     margin-left: 115px;
+    & a {
+      font-size: 14px;
+    }
   }
   .header__eco-container {
     margin-top: 56px;
     margin-left: 77px;
     max-width: 420px;
+    height: 192px;
   }
   .header__eco-container--description {
     font-size: 14px;
@@ -320,6 +361,9 @@ h1 {
     max-width: 200px;
     margin-left: 30px;
     margin-bottom: 30px;
+    & a {
+      max-width: 36px;
+    }
     & img {
       margin-top: 30px;
     }
@@ -369,6 +413,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 5;
     & a {
       text-decoration: none;
       color: #ffffff;
@@ -386,8 +431,8 @@ h1 {
   }
   .header__nabar--links {
     display: flex;
-    width: calc(100vw - 739px);
-    justify-content: space-between;
+    width: calc(100vw - 704px);
+    justify-content: space-evenly;
     & li {
       height: 21px;
     }
