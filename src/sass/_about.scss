@@ -107,7 +107,7 @@
     background-size: 100%;
   }
 }
-
+/*
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx),
@@ -116,7 +116,7 @@
     background-image: url(/./images/milkdrop-desktop-x2.png);
   }
 }
-
+*/
 .about__container {
   padding-inline: 20px;
   padding-bottom: 46px;
@@ -205,12 +205,12 @@
   background-position: bottom;
   padding-bottom: 27px;
 }
-
+/*
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about__paragraph {
     background-image: url(/./images/milkdrop-mobile-x2.png);
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .about__paragraph {
