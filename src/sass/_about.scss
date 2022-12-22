@@ -266,8 +266,7 @@
 
 .modal-about {
   box-sizing: border-box;
-  max-width: 450px;
-  min-width: 300px;
+  max-width: 300px;
   height: 450px;
   background-color: var(--white);
 
@@ -276,6 +275,10 @@
   border-radius: 4px;
   position: relative;
   padding: 40px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 500px;
@@ -318,7 +321,7 @@
     margin-bottom: 10px;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 162%;
     @media screen and (min-width: 480px) {
       font-size: 18px;
