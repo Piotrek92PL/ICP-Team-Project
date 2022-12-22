@@ -18,10 +18,10 @@ h1 {
   }
 }
 .ellipse-mobile {
-width: 284px;
-position: absolute;
-top: 83px;
-right: 0px;
+  width: 284px;
+  position: absolute;
+  top: 83px;
+  right: 0px;
 }
 .arrow {
   width: 18px;
@@ -39,6 +39,10 @@ right: 0px;
   justify-content: space-between;
   width: 20px;
   height: 12px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
   & .bar {
     height: 2px;
     width: 100%;
@@ -61,8 +65,7 @@ right: 0px;
   right: 0px;
   top: 92px;
   z-index: 2;
-  
-  }
+}
 .header__headline {
   display: flex;
   position: relative;
@@ -97,7 +100,7 @@ right: 0px;
   margin-left: 20px;
   display: flex;
   flex-direction: row;
-  gap: 8px; 
+  gap: 8px;
   & a {
     text-decoration: none;
 
@@ -105,7 +108,7 @@ right: 0px;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
-    color: #D41443;
+    color: #d41443;
     &:hover {
       color: #ffffff;
     }
@@ -219,8 +222,8 @@ right: 0px;
   }
   .header__background--component {
     visibility: visible;
-    width: 143px; 
-   /* height: 368px; */
+    width: 143px;
+    /* height: 368px; */
     position: absolute;
     right: 247px;
     top: 61px;
@@ -320,8 +323,8 @@ right: 0px;
     font-size: 38px;
   }
   .arrow {
-  width: 36px;
-}
+    width: 36px;
+  }
   .header__headline--second {
     font-size: 58px;
     line-height: 90.5%;
@@ -400,7 +403,7 @@ right: 0px;
     height: 30px;
     content: '';
     /* background-image: url(./images/sprite.svg#ellipse); */
-    
+
     background-size: contain;
     display: inline-block;
     position: relative;
@@ -443,13 +446,12 @@ right: 0px;
   .header__menu {
     height: 50px;
   }
-   .header__background--lady {
+  .header__background--lady {
     top: 433px;
     right: 109px;
     width: 293px;
     height: 232px;
   }
-
 }
 
 .mobile-menu {
@@ -487,6 +489,10 @@ right: 0px;
     transition: background-color var(--transition-duratio) var(--cubic-bezier),
       stroke var(--transition-duratio) var(--cubic-bezier);
 
+    @media screen and (min-width: 768px) {
+      right: 34px;
+    }
+
     &:hover,
     &:focus {
       stroke: var(--black);
@@ -512,6 +518,11 @@ right: 0px;
     text-align: center;
     color: var(--cherry);
 
+    @media screen and (min-width: 768px) {
+      width: 186px;
+      margin-left: 34px;
+    }
+
     &:hover,
     &:focus {
       background-color: var(--dawn-pink);
@@ -531,6 +542,10 @@ right: 0px;
     align-items: center;
     text-align: center;
     padding-left: 21px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 24px;
+    }
   }
 
   &__navigation-link {
@@ -553,6 +568,10 @@ right: 0px;
     margin-top: 2px;
     stroke: var(--cherry);
     margin-left: 18px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 16px;
+    }
   }
   .header__background--lady {
     top: 266px;
