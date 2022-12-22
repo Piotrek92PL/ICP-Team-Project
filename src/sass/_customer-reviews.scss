@@ -1,10 +1,11 @@
 .customer-reviews {
   padding-top: 40px;
   padding-bottom: 43px;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   &__img {
     margin: 0 auto;
     width: 84px;
@@ -12,26 +13,14 @@
   }
   &__block {
     margin-top: 29px;
-    width: 280px;
-    height: 308px;
+    // width: 280px;
+    // height: 308px;
     background-color: var(--alabaster);
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     padding: 43px 66px 26px 66px;
     position: relative;
-    margin-bottom: 52px;
-
-    &::after {
-      content: '';
-      background-size: contain;
-      background-image: url(/images/dots-x2.png);
-      // (dots 1 są w okropnej jakości)
-      position: absolute;
-      background-repeat: no-repeat;
-      width: 28px;
-      height: 4px;
-      top: 330px;
-    }
+    margin-bottom: 50px;
   }
   &__text {
     background-image: repeating-linear-gradient(
@@ -54,16 +43,11 @@
       background-size: contain;
       background-repeat: no-repeat;
       top: -15px;
-      position: absolute;
       z-index: -1;
-      left: -3px;
+      left: -13px;
       width: 54px;
       height: 40px;
-    }
-  }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .customer-reviews__text::before {
-      background-image: url(../images/quote-mobile-x2.png);
+      position: absolute;
     }
   }
   &__dots {
@@ -73,11 +57,52 @@
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: '';
+      background-size: contain;
+      background-image: url(/images/dots-x2.png);
+      // (dots 1 są w okropnej jakości)
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 4px;
+      left: 47%;
+      top: -20px;
+    }
   }
+
   &__icon-list {
     display: flex;
     justify-content: center;
     gap: 18px;
+    list-style-type: none;
+    li {
+      &.slick-active {
+        position: relative;
+        button {
+          background-color: transparent;
+        }
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8449 5.85484C13.0696 5.60772 13.0479 5.22897 12.7964 5.00908L7.25687 0.161935C7.00543 -0.0579491 6.60231 -0.0533429 6.35616 0.172319L0.797761 5.26751C0.551613 5.49318 0.539532 5.87145 0.771013 6.11206L0.91037 6.25719C1.14157 6.49781 1.51527 6.52649 1.74453 6.32107L2.15994 5.94907V11.3953C2.15994 11.7295 2.43069 12 2.7646 12H4.93127C5.26518 12 5.53594 11.7295 5.53594 11.3953V7.58515H8.29956V11.3953C8.29475 11.7292 8.53367 11.9998 8.86757 11.9998H11.1637C11.4976 11.9998 11.7684 11.7292 11.7684 11.3951V6.02575C11.7684 6.02575 11.8831 6.12628 12.0247 6.25069C12.166 6.37485 12.4627 6.2753 12.6874 6.02794L12.8449 5.85484Z' fill='%23D31342'/%3E%3C/svg%3E%0A");
+        }
+      }
+      button {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-color: var(--light-grey);
+        border: none;
+        border-radius: 1em;
+        color: transparent;
+        width: 18px;
+        height: 18px;
+      }
+    }
   }
   &__dots-list {
     display: flex;
@@ -98,6 +123,12 @@
     fill: var(--light-grey);
   }
 }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .customer-reviews__text::before {
+    background-image: url(../images/quote-mobile-x2.png);
+  }
+}
 @media screen and (min-width: 768px) {
   .customer-reviews {
     padding-top: 60px;
@@ -107,13 +138,10 @@
 
     &__block {
       margin-top: 19px;
-      width: 589px;
-      height: 164px;
-      max-width: 926px;
+      // width: 589px;
+      // height: 164px;
+      // max-width: 926px;
       margin-bottom: 42px;
-      &::after {
-        top: 185px;
-      }
     }
 
     &__text {
@@ -126,23 +154,23 @@
     &__customer {
       font-size: 16px;
       margin-bottom: 35px;
+      &::before {
+        left: 48%;
+      }
     }
   }
 }
+
 @media screen and (min-width: 1280px) {
   .customer-reviews {
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 176px;
     padding-right: 176px;
-
     &__block {
       margin-top: 15px;
-      width: 962px;
-      height: 138px;
-      &::after {
-        top: 160px;
-      }
+      // width: 962px;
+      // height: 138px;
     }
     &__text {
       font-size: 16px;
@@ -152,6 +180,10 @@
     }
     &__customer {
       font-size: 20px;
+      &::before {
+        left: 49%;
+        top: -20px;
+      }
     }
   }
 }
