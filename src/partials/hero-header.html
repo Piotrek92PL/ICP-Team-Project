@@ -24,7 +24,7 @@
           </ul>
         </div>
       </nav>
-      <button type="button" class="header__menu-button">
+      <button type="button" class="header__menu-button" data-modal-open-h1>
         Buy now
         <svg class="mobile-menu__icon">
           <use href="./images/symbol-defs-contacts.svg#icon-arrow-right"></use>
@@ -117,7 +117,7 @@
     </svg>
   </button>
 
-  <button type="button" class="mobile-menu__modal-button">
+  <button type="button" class="mobile-menu__modal-button" data-modal-open-h2>
     Buy now
     <svg class="mobile-menu__icon">
       <use href="./images/symbol-defs-contacts.svg#icon-arrow-right"></use>
@@ -141,4 +141,137 @@
       <a href="#contacts" class="mobile-menu__navigation-link">Contact</a>
     </li>
   </ul>
+</div>
+
+<div class="backdrop is-hidden" data-modal-h>
+  <div class="modal-header modal-header--position">
+    <button class="modal-header__close-button" data-modal-close-h>
+      <svg height="10" width="10" class="modal-header__icon">
+        <use href="./images/symbol-defs-contacts.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-header__title">Your order</h2>
+    <form name="client-order" class="modal-header__form">
+      <fildset class="modal-header__fieldset">
+        <label for="name" class="modal-header__label">Name</label>
+        <input
+          type="text"
+          name="user-name"
+          id="name"
+          placeholder="Emily Doe"
+          class="modal-header__input"
+          required
+        />
+      </fildset>
+      <fildset class="modal-header__fieldset">
+        <label for="phone" class="modal-header__label">Phone number</label>
+        <input
+          type="tel"
+          name="user-phone"
+          id="phone"
+          placeholder="000-000-000"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          class="modal-header__input"
+          required
+        />
+      </fildset>
+      <fildset class="modal-header__fieldset">
+        <label for="email" class="modal-header__label">Email</label>
+        <input
+          type="email"
+          name="user-email"
+          id="email"
+          placeholder="yourmail@mail.com"
+          class="modal-header__input"
+          required
+        />
+      </fildset>
+      <fildset class="modal-header__fieldset modal-header__fieldset--margin">
+        <label for="adres" class="modal-header__label">Adres</label>
+        <input
+          type="text"
+          name="user-adres"
+          id="adres"
+          placeholder="289 Church St, New York, NY 10013, USA"
+          class="modal-header__input"
+          required
+        />
+      </fildset>
+
+      <label class="modal-header__checkbox-label"
+        ><input
+          type="checkbox"
+          name="ice-cream"
+          value="ice-cream"
+          class="modal-header__checkbox"
+        />Ice cream</label
+      >
+      <fildset class="modal-header__fieldset modal-header__fieldset--margin">
+        <input
+          type="number"
+          name="ice-cream-quantity"
+          id="ice-cream-quantity"
+          min="0"
+          max="30"
+          placeholder="0-30"
+          class="modal-header__input"
+        />
+      </fildset>
+
+      <label class="modal-header__checkbox-label"
+        ><input
+          type="checkbox"
+          name="ice-coffee"
+          value="ice-coffee"
+          class="modal-header__checkbox"
+        />Ice coffee</label
+      >
+      <fildset class="modal-header__fieldset modal-header__fieldset--margin">
+        <input
+          type="number"
+          name="ice-coffee-quantity"
+          id="ice-coffee-quantity"
+          min="0"
+          max="30"
+          placeholder="0-30"
+          class="modal-header__input"
+        />
+      </fildset>
+
+      <label class="modal-header__checkbox-label"
+        ><input
+          type="checkbox"
+          name="milkshakes"
+          value="milkshakes"
+          class="modal-header__checkbox"
+        />Milkshakes</label
+      >
+      <fildset class="modal-header__fieldset">
+        <input
+          type="number"
+          name="milkshakes-quantity"
+          id="milkshakes-quantity"
+          min="0"
+          max="30"
+          placeholder="0-30"
+          class="modal-header__input"
+        />
+      </fildset>
+
+      <fieldset
+        class="modal-header__fieldset modal-header__fieldset--coment-box modal-header__fieldset--margin"
+      >
+        <label for="coment" class="modal-header__label">Coment</label>
+        <textarea
+          name="user-coment"
+          id="coment"
+          rows="6"
+          placeholder="Specify your order"
+          class="modal-header__input modal-header__input--coment"
+        ></textarea>
+      </fieldset>
+
+      <button type="submit" class="modal-header__submit">Submit</button>
+    </form>
+  </div>
 </div>
