@@ -230,7 +230,7 @@
             z-index: 2;
             border-radius: 24px;
             padding-inline: 14%;
-            transform: translateX(0);
+            transform: translateY(0);
             transition-duration: var(--transition-duration);
             transition-timing-function: var(--cubic-bezier);
 
@@ -248,9 +248,11 @@
         }
 
        .is-hidden {
+            // display: none;
+            overflow: hidden;
             visibility: hidden;
             pointer-events: none;
-            transform: translateX(100%) scale(0);
+            transform: translateY(100%) scale(0);
             transition-duration: var(--transition-duration);
             transition-timing-function: var(--cubic-bezier);
         }
@@ -356,7 +358,7 @@
 
     &:hover,
     &:focus {
-        transform: rotate(360deg) scale(1.5);
+        transform: rotate(450deg) scale(1.5);
         transition-duration: var(--transition-duration);
         transition-timing-function: var(--cubic-bezier);
     }
