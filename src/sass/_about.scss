@@ -1,6 +1,7 @@
 .about {
   background-color: var(--rose-white);
-  max-width: var(--mobile-width);
+  // background-color: red;
+  // max-width: var(--mobile-width);
   padding-top: 125px;
   padding-bottom: 39px;
   margin: 0 auto;
@@ -8,7 +9,7 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    max-width: var(--tablet-width);
+    // max-width: var(--tablet-width);
     padding-top: 130px;
     padding-bottom: 66px;
   }
@@ -16,7 +17,7 @@
 
 @media screen and (min-width: 1280px) {
   .about {
-    max-width: 1280px;
+    // max-width: 1280px;
     padding-top: 125px;
     padding-bottom: 39px;
   }
